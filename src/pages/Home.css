@@ -1,0 +1,565 @@
+/* geral*/
+.principal {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 18% 80.5%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        'tempo noticias'
+        'cotacao noticias';
+    padding: 0.5rem;
+}
+
+.news {
+    grid-area: noticias;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao {
+    height: 50%;
+    display: grid;
+    justify-content: space-around;
+    align-items: start;
+    grid-template-columns: 31% 31% 31%;
+    gap: .5rem;
+
+}
+
+.secao div {
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+}
+
+/* noticias */
+.media {
+    height: 40%;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: end;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.491);
+}
+
+.links-container a {
+    color: #fff;
+}
+
+.links-container a:hover {
+    color: rgb(171, 138, 202);
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.links-container div {
+    width: 20%;
+    margin: .4rem;
+    padding: .4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.links-container div:hover {
+    opacity: 0.8;
+}
+
+.links-container img {
+    height: 150px;
+    width: 220px;
+    margin-bottom: .5rem;
+    border-radius: 3px;
+    border: 3px solid #151515;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+/* notas*/
+.add-notes {
+    height: 100%;
+    width: 80%;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-notes h2 {
+    color: #000;
+    padding: 0.5rem;
+}
+
+.add-notes svg {
+    color: #000;
+    font-size: 4rem;
+}
+
+.notes {
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.remove {
+    position: absolute;
+    right: 6.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.8rem;
+    font-family: 'helvetica';
+}
+
+textarea {
+    padding: 1.2rem;
+    padding-top: 2.8rem;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #4b4453;
+}
+
+/* youtube */
+.youtube-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-container div a {
+    display: flex;
+    align-items: center;
+    background-color: #f4efef;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.youtube-container div:hover {
+    opacity: 0.75;
+}
+
+.youtube-container img {
+    width: 225px;
+    margin-right: 8px;
+}
+
+/* movies */
+.movies {
+    background: url(images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.movies h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffc30b;
+}
+
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.movies-container img {
+    height: 80%;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.9)
+}
+
+.movies-container p {
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffbf00;
+}
+
+.movies::-webkit-scrollbar {
+    width: 6px;
+}
+
+.movies::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #4b4453;
+}
+
+/* cotacao */
+.currency {
+    grid-area: cotacao;
+    display: flex;
+    justify-content: center;
+}
+
+.currency-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: 50%;
+    border: 2px solid black;
+    background-color: rgba(6, 2, 2, 0.42);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.currency-main svg {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+/* tempo */
+.weather {
+    grid-area: tempo;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.7rem;
+}
+
+.weather img {
+    height: 30px;
+}
+
+.weather h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    gap: 5px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    background-color: rgba(6, 2, 2, 0.42);
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.weather-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin: .6rem;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 10px;
+}
+
+.weather-details p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#humidity {
+    border-right: 1px solid #fff;
+    padding-right: .6rem;
+}
+
+#temperature {
+    font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+
+    .media {
+        margin-bottom: 1rem;
+    }
+
+    .links-container div {
+        font-size: .8rem;
+    }
+
+    .links-container img {
+        height: 100px;
+        width: 180px;
+        margin-bottom: .3rem;
+    }
+    
+    .weather {
+        margin-top: 2.5rem;
+    }
+
+    .weather-main {
+        height: 65%;
+        width: 100%;
+    }
+
+    #temperature {
+        font-size: 1.5rem;
+    }
+
+    .weather-details {
+        gap: 5px;
+    }
+
+    .weather-details p {
+        font-size: .7rem
+    }
+
+    .weather h2 {
+        font-size: 1.2rem
+    }
+
+    .weather img {
+        height: 20px;
+    }
+
+    .currency-main {
+        height: 65%;
+        width: 100%;
+    }
+
+    .youtube-container div a {
+        font-size: .7rem;
+    }
+    
+    .youtube-container img {
+        width: 175px;
+        height: 125px;
+    }
+
+    .movies h3 {
+        font-size: 1.2rem;
+    }
+
+    .news {
+        margin-top: 2rem;
+    }
+
+    .secao {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1024px) {
+    .principal {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            'tempo cotacao'
+            'noticias noticias'
+        ;
+    }
+
+    .media {
+        height: fit-content;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 600px;
+        height: fit-content;
+    }
+
+    .links-container div {
+        width: 40%;
+    }
+
+    .links-container img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .secao {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+        height: fit-content;
+    }
+
+    .weather-main {
+        height: 55%;
+        width: 70%;
+    }
+
+    .weather {
+        align-items: center;
+        margin: 0;
+    }
+
+    .currency {
+        align-items: center;
+    }
+
+    .currency-main {
+        height: 55%;
+        width: 70%;
+    }
+
+    .add-notes {
+        visibility: hidden;
+    }
+
+    .movies {
+        width: 50%;
+    }
+
+    .movies h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .principal {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            'tempo cotacao'
+            'noticias noticias'
+        ;
+    }
+
+    .news {
+        display: flex;
+        align-items: center;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .links-container img {
+        width: 300px;
+    }
+
+    .secao {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+
+    .weather-main {
+        height: 50%;
+        width: 90%;
+    }
+
+    .weather-details { 
+        display: none;
+    }
+
+    .currency-main {
+        height: 50%;
+        width: 90%;
+    }
+
+    .currency-main h3 {
+        font-size: .8rem;
+    }
+
+    .add-notes {
+        visibility: hidden;
+    }
+
+    .movies {
+        width: 60%;
+    }
+
+    .movies h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            'tempo cotacao'
+            'noticias noticias'
+        ;
+    }
+
+    .links-container {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secao {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+
+    .weather-main {
+        height: 50%;
+        width: 90%;
+    }
+
+    .weather-details { 
+        display: none;
+    }
+
+    .currency-main {
+        height: 50%;
+        width: 90%;
+    }
+
+    .currency-main h3 {
+        font-size: .8rem;
+    }
+
+    .add-notes {
+        visibility: hidden;
+    }
+
+    .movies {
+        width: 80%;
+    }
+
+    .movies h3 {
+        font-size: 1.8rem;
+    }
+}
+

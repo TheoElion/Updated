@@ -1,0 +1,21 @@
+.nav-container {
+    background-color: rgba(6, 2, 2, 0.42);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container img {
+    width: 300px;
+}
+
+@media (max-width: 1200px) {
+    .nav-container {
+        height: 40px;
+    }
+
+    .nav-container img {
+        width: 220px;
+    }
+}
