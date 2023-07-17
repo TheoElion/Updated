@@ -8,22 +8,22 @@
         'tempo noticias'
         'cotacao noticias';
     padding: 0.5rem;
+    overflow-x: hidden;
 }
 
 .news {
     grid-area: noticias;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .secao {
     height: 50%;
     display: grid;
     justify-content: space-around;
-    align-items: start;
     grid-template-columns: 31% 31% 31%;
     gap: .5rem;
-
 }
 
 .secao div {
@@ -307,10 +307,18 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 2rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
 
     .media {
+        height: fit-content;
         margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+
+    .links-container {
+        width: 810px;
+        overflow: auto;
+        gap: 30px;
     }
 
     .links-container div {
@@ -324,12 +332,12 @@ textarea::-webkit-scrollbar-thumb {
     }
     
     .weather {
-        margin-top: 2.5rem;
+        margin-top: 2.25rem;
     }
 
     .weather-main {
         height: 65%;
-        width: 100%;
+        width: 95%;
     }
 
     #temperature {
@@ -354,29 +362,34 @@ textarea::-webkit-scrollbar-thumb {
 
     .currency-main {
         height: 65%;
-        width: 100%;
+        width: 95%;
+    }
+
+    .currency-main h3 {
+        font-size: 1rem;
     }
 
     .youtube-container div a {
-        font-size: .7rem;
+        font-size: .65rem;
     }
     
     .youtube-container img {
-        width: 175px;
-        height: 125px;
+        width: 155px;
+        height: 110px;
     }
 
     .movies h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .news {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
-    .secao {
-        height: fit-content;
+    .secao div {
+        height: 330px;
     }
+
 }
 
 @media (max-width: 1024px) {
