@@ -1,13 +1,13 @@
-const NewsLinks = ({ article, index }) => {
+const NewsLinks = ({ results, index }) => {
 
-  const limitedTitle = article.title.length > 65
-    ? `${article.title.slice(0, 65)}...`
-    : article.title
+  const limitedTitle = results.title.length > 65
+    ? `${results.title.slice(0, 65)}...`
+    : results.title
 
   return (
     <div>
-      <a href={article.url}>
-        <img src={article.urlToImage}/>  
+      <a href={results.url}>
+        <img src={results.multimedia[0].url}/>  
         <li key={index}>
           <p>
             {limitedTitle}

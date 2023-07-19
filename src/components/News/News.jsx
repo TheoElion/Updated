@@ -6,23 +6,24 @@ import NewsLinks from "./NewsLinks"
 
 const News = () => {
 
-  const newsApi = import.meta.env.VITE_GOOGLE_NEWS
+  const timesApi = import.meta.env.VITE_NEWS_KEY
   const [news, setNews] = useState([])
 
   useEffect(() => {
-    const getNews = async () => {
-      const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${newsApi}`)
-      setNews(res.data.articles)
+    const getTimesNews = async () => {
+      const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${timesApi}`)
+      console.log(res.data.results)
+      setNews(res.data.results)
     }
-    getNews()
 
+    getTimesNews()
   }, [])
 
   return (
     <div>
       <div className="links-container">
-        {news.slice(0, 5).map((article, index) => {
-          return <NewsLinks key={index} article={article} />
+        {news.slice(0, 5).map((results, index) => {
+          return <NewsLinks key={index} results={results} />
         })}
       </div>
     </div>
