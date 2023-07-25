@@ -84,7 +84,7 @@
 .add-notes {
     height: 100%;
     width: 80%;
-    border: 2px dashed black;
+    border: 2px dashed #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +93,7 @@
 }
 
 .add-notes h2 {
-    color: #000;
+    color: #fff;
     padding: 0.5rem;
 }
 
@@ -423,6 +423,7 @@ textarea::-webkit-scrollbar-thumb {
 
     .links-container div {
         width: 40%;
+        font-size: .8rem;
     }
 
     .links-container img {
@@ -488,6 +489,10 @@ textarea::-webkit-scrollbar-thumb {
         flex-direction: column;
         align-items: center;
         height: fit-content;
+    }
+
+    .links-container div a {
+        font-size: 1rem;
     }
 
     .links-container img {

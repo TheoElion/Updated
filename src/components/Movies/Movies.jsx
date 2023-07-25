@@ -30,7 +30,7 @@ const Movies = () => {
                 movies.slice(0, 10).map((movie, index) => {
                     return (
                         <div className='movies-container' key={index}>
-                            <img src={imgUrl + movie.poster_path} />
+                            <img src={imgUrl + movie.poster_path} alt='cartaz'/>
                             <p>{movie.title}</p>
                         </div>
                     )
