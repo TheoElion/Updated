@@ -169,7 +169,7 @@ textarea::-webkit-scrollbar-thumb {
 
 /* movies */
 .movies {
-    background: url(public/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background: url(public/images/cinema.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;

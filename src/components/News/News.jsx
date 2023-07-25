@@ -12,7 +12,6 @@ const News = () => {
   useEffect(() => {
     const getTimesNews = async () => {
       const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${timesApi}`)
-      console.log(res.data.results)
       setNews(res.data.results)
     }
 

@@ -9,6 +9,7 @@
 
 .nav-container img {
     width: 300px;
+    margin-top: 5px;
 }
 
 @media (max-width: 1200px) {
