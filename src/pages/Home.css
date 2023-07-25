@@ -169,7 +169,7 @@ textarea::-webkit-scrollbar-thumb {
 
 /* movies */
 .movies {
-    background: url(images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background: url(public/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -315,14 +315,23 @@ textarea::-webkit-scrollbar-thumb {
         margin-left: 1rem;
     }
 
+    .links-container::-webkit-scrollbar {
+        height: 6px;
+    }
+    
+    .links-container::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #4b4453;
+    }
+
     .links-container {
-        width: 810px;
+        width: 830px;
         overflow: auto;
         gap: 30px;
     }
 
     .links-container div {
-        font-size: .8rem;
+        font-size: .65rem;
     }
 
     .links-container img {
@@ -564,7 +573,7 @@ textarea::-webkit-scrollbar-thumb {
     }
 
     .add-notes {
-        visibility: hidden;
+        display: none;
     }
 
     .movies {
