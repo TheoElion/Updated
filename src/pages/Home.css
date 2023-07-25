@@ -84,7 +84,7 @@
 .add-notes {
     height: 100%;
     width: 80%;
-    border: 2px dashed #fff;
+    border: 2px dashed #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,7 @@
 }
 
 .add-notes svg {
-    color: #000;
+    color: #fff;
     font-size: 4rem;
 }
 
