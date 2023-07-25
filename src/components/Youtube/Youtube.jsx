@@ -22,7 +22,7 @@ const Youtube = () => {
           return (
             <div key={index}>
               <a href={`https://www.youtube.com/watch?v=${video.id}`}>
-                <img src={video.snippet.thumbnails.maxres.url}/>
+                <img src={video.snippet.thumbnails.maxres.url} alt="thumb"/>
                 <p>{video.snippet.title}</p>
               </a>
             </div>

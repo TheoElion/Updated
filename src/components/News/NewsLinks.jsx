@@ -7,12 +7,14 @@ const NewsLinks = ({ results, index }) => {
   return (
     <div>
       <a href={results.url}>
-        <img src={results.multimedia[0].url}/>  
-        <li key={index}>
-          <p>
-            {limitedTitle}
-          </p>
-        </li>
+        <img src={results.multimedia[0].url} alt="noticias"/>  
+        <ul>
+          <li key={index}>
+            <p>
+              {limitedTitle}
+            </p>
+          </li>
+        </ul>
       </a>
     </div>
   )

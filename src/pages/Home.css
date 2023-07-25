@@ -547,6 +547,10 @@ textarea::-webkit-scrollbar-thumb {
         justify-content: center;
     }
 
+    .links-container div a {
+        font-size: 1rem;
+    }
+
     .secao {
         display: grid;
         grid-template-columns: 100%;
